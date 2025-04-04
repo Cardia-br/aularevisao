@@ -1,0 +1,8 @@
+<h1>Todo List</h1>
+
+<ul>
+    {% for todo in todo_list %}
+        <li>{{ todo.title }}- <a href="{% url 'todo_update' todo.pk %}">Editar</a> </li>
+    {% endfor %}
+</ul>
+<a href="http://127.0.0.1:8000/create"> nova tarefa</a>
